@@ -1,0 +1,351 @@
+/* Basic Page Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+#main-header {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+#main-header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #1976d2;
+}
+
+#student-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.headline {
+    font-size: 16px;
+    font-style: italic;
+    color: #666666;
+    margin: 6px 0;
+}
+
+.intro-text {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Container & Cards */
+.container {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #1976d2;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #1976d2;
+    color: #ffffff;
+    border: none;
+    padding: 9px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+/* Task 2: About Me */
+#status-message {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-left: 4px solid #1976d2;
+    margin: 12px 0;
+    border-radius: 4px;
+}
+
+#fun-facts {
+    margin: 12px 0;
+}
+
+#fun-facts ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Task 3: Gallery */
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Task 4: Accordion / Slide */
+.hint {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.slide-heading {
+    background-color: #f5f5f5;
+    padding: 12px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.slide-heading:hover {
+    background-color: #e8e8e8;
+}
+
+.slide-panel {
+    display: none;
+    padding: 15px;
+    background-color: #fafafa;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Task 5: Skills List */
+#skills-list {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+#skills-list li {
+    padding: 4px 0;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-group input[type="text"] {
+    padding: 9px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Task 6: Social Link */
+.social-anchor {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f1f3f5;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    margin: 8px 0;
+}
+
+.social-anchor:hover {
+    text-decoration: underline;
+}
+
+/* Task 7: Contact Form */
+.form-row {
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-row input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.live-preview {
+    margin-top: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #28a745;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.live-preview h4 {
+    margin-bottom: 6px;
+    color: #28a745;
+}
+
+/* Task 8: Animation Progress Bars */
+.skill-bar-container {
+    margin-bottom: 15px;
+}
+
+.skill-label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.progress-track {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 24px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #28a745;
+    color: #ffffff;
+    text-align: right;
+    padding-right: 8px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+#bar-html { background-color: #e44d26; }
+#bar-js { background-color: #f7df1e; color: #000; }
+#bar-jquery { background-color: #0769ad; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888888;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+}
+
+/* Dark Theme (used by jQuery .toggleClass or button) */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode #main-header,
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-color: #333333;
+}
+
+body.dark-mode #main-header h1,
+body.dark-mode .card h2 {
+    color: #64b5f6;
+    border-color: #333333;
+}
+
+body.dark-mode #student-name {
+    color: #ffffff;
+}
+
+body.dark-mode .headline,
+body.dark-mode .hint,
+body.dark-mode footer {
+    color: #aaaaaa;
+}
+
+body.dark-mode .slide-heading {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .slide-panel {
+    background-color: #242424;
+    border-color: #333333;
+}
+
+body.dark-mode .social-anchor {
+    background-color: #2a2a2a;
+    color: #64b5f6;
+    border-color: #444444;
+}
+
+body.dark-mode .live-preview {
+    background-color: #242424;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"] {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
